@@ -116,7 +116,9 @@ const Blog = () => {
         title="Blog & Insights"
         subtitle="Stay informed with our latest articles, insights, and industry trends"
         imageSrc="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
-        overlayOpacity="opacity-60"
+        overlayOpacity="opacity-70"
+        layout="minimal"
+        theme="light"
       />
       
       <section className="py-16 bg-gray-50">

@@ -17,6 +17,9 @@ const AboutUs = () => {
         subtitle="Discover Our Journey and Vision"
         imageSrc="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
         imagePosition="top"
+        layout="left-aligned"
+        cornerAccent={true}
+        overlayOpacity="opacity-60"
       />
 
       <section className="section bg-white">

@@ -15,6 +15,8 @@ const Index = () => {
         buttonText="Explore Our Services"
         buttonLink="/services"
         imageSrc="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05"
+        layout="split"
+        overlayOpacity="opacity-40"
       />
 
       {/* Overview Section */}

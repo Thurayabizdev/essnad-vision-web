@@ -10,6 +10,9 @@ const OurImpact = () => {
         subtitle="Driving Positive Change Through Expert Consulting"
         imageSrc="https://images.unsplash.com/photo-1605810230434-7631ac76ec81"
         imagePosition="center"
+        layout="centered"
+        cornerAccent={true}
+        overlayOpacity="opacity-65"
       />
 
       <section className="section bg-white">
