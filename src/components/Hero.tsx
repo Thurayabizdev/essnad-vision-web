@@ -68,8 +68,8 @@ const Hero = ({
         </>
       )}
       
-      {/* Content */}
-      <div className={`container relative z-20 ${getContainerClasses()}`}>
+      {/* Content - Added vertical padding to create space between header and content */}
+      <div className={`container relative z-20 flex flex-col justify-center py-16 ${getContainerClasses()}`}>
         {layout === "split" ? (
           <>
             <div className="mb-8 md:mb-0 p-4">
