@@ -15,7 +15,7 @@ const AboutUs = () => {
       <Hero
         title="Our Story & Heritage"
         subtitle="Building a Legacy of Excellence Through Innovation"
-        imageSrc="/lovable-uploads/2d5cc9de-c4e6-418b-9528-40ebd2cd0003.png"
+        imageSrc="https://images.unsplash.com/photo-1507679799987-c73779587ccf"
         imagePosition="top"
         layout="left-aligned"
         cornerAccent={true}

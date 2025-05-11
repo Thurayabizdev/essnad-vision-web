@@ -115,7 +115,7 @@ const Blog = () => {
       <Hero
         title="Insights & Perspectives"
         subtitle="Expert Knowledge to Power Your Business Decisions"
-        imageSrc="/lovable-uploads/2d5cc9de-c4e6-418b-9528-40ebd2cd0003.png"
+        imageSrc="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
         overlayOpacity="opacity-70"
         layout="minimal"
         theme="light"

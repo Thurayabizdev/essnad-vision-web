@@ -1,4 +1,3 @@
-
 import Hero from "@/components/Hero";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -10,7 +9,7 @@ const Careers = () => {
       <Hero
         title="Grow With Us"
         subtitle="Shape the Future at Essnad"
-        imageSrc="/lovable-uploads/2d5cc9de-c4e6-418b-9528-40ebd2cd0003.png"
+        imageSrc="https://images.unsplash.com/photo-1522071820081-009f0129c71c"
         imagePosition="center"
       />
 

@@ -2,7 +2,8 @@
 import Hero from "@/components/Hero";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Check, ArrowRight } from "lucide-react";
+import { Check, ArrowRight, Award, ShieldCheck, Briefcase, Users, Lightbulb } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 
 const Index = () => {
   return (
@@ -14,10 +15,47 @@ const Index = () => {
         description="Essnad is an Oman-based consulting firm specializing in digital transformation, governance, risk management, and security with over 20 years of expertise."
         buttonText="Explore Our Services"
         buttonLink="/services"
-        imageSrc="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05"
+        imageSrc="https://images.unsplash.com/photo-1487958449943-2429e8be8625"
         layout="split"
-        overlayOpacity="opacity-40"
+        overlayOpacity="opacity-50"
       />
+
+      {/* Featured Services Slider */}
+      <section className="py-12 bg-gradient-to-b from-essnad-lightGray to-white overflow-hidden">
+        <div className="container">
+          <h2 className="text-3xl font-bold text-center mb-8 text-essnad-gray">Our Expertise Areas</h2>
+          
+          <div className="flex gap-4 pb-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide">
+            {featuredServices.map((service, index) => (
+              <div 
+                key={index} 
+                className="min-w-[300px] snap-center bg-white rounded-xl shadow-md overflow-hidden flex-shrink-0 transition-all hover:shadow-lg"
+              >
+                <div className="h-40 overflow-hidden">
+                  <img 
+                    src={service.image} 
+                    alt={service.title} 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-2 text-essnad-gray">{service.title}</h3>
+                  <p className="text-essnad-gray mb-4">{service.description}</p>
+                  <Link to="/services" className="inline-flex items-center text-essnad-orange hover:text-orange-600 font-medium">
+                    Learn more <ArrowRight className="ml-1 h-4 w-4" />
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          <div className="flex justify-center mt-4">
+            <Button asChild className="bg-essnad-orange hover:bg-orange-600 text-white">
+              <Link to="/services">View All Services</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
 
       {/* Overview Section */}
       <section className="section bg-white">
@@ -44,11 +82,30 @@ const Index = () => {
             </div>
             <div className="rounded-lg overflow-hidden shadow-lg">
               <img 
-                src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b" 
+                src="https://images.unsplash.com/photo-1593508512255-86ab42a8e610" 
                 alt="Digital Transformation" 
                 className="w-full h-auto"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-16 bg-essnad-gray text-white">
+        <div className="container">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold mb-4">Our Impact in Numbers</h2>
+            <p className="max-w-2xl mx-auto">Delivering measurable results and creating lasting value for our clients across industries</p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            {stats.map((stat, index) => (
+              <div key={index} className="p-6">
+                <p className="text-4xl font-bold text-essnad-orange mb-2">{stat.value}</p>
+                <p className="text-lg">{stat.label}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -134,6 +191,32 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Testimonials Section */}
+      <section className="py-16 bg-essnad-lightGray">
+        <div className="container">
+          <h2 className="section-title text-center mb-12">What Our Clients Say</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <Card key={index} className="bg-white overflow-visible relative">
+                <CardContent className="pt-8">
+                  <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full bg-essnad-orange/20 flex items-center justify-center">
+                    <span className="text-5xl text-essnad-orange leading-none">"</span>
+                  </div>
+                  <p className="text-essnad-gray mb-6 text-center italic">
+                    {testimonial.quote}
+                  </p>
+                  <div className="text-center">
+                    <h4 className="font-bold text-essnad-gray">{testimonial.name}</h4>
+                    <p className="text-sm text-essnad-gray/70">{testimonial.position}</p>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action */}
       <section className="py-16 bg-gradient-to-r from-essnad-orange to-orange-500 text-white">
         <div className="container">
@@ -180,6 +263,62 @@ const services = [
   {
     title: "IT Security & Cybersecurity",
     description: "Protect your valuable data and systems with advanced information security solutions and cybersecurity strategies."
+  }
+];
+
+// Featured services for the new slider
+const featuredServices = [
+  {
+    title: "Digital Transformation",
+    description: "Modern strategies to transform your business processes through cutting-edge technology.",
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+  },
+  {
+    title: "Risk Management",
+    description: "Comprehensive solutions to identify, assess, and mitigate business risks effectively.",
+    image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf"
+  },
+  {
+    title: "Cybersecurity",
+    description: "Protect your organization from digital threats with advanced security frameworks.",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b"
+  },
+  {
+    title: "Business Resilience",
+    description: "Build adaptive strategies to ensure business continuity in changing environments.",
+    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c"
+  },
+  {
+    title: "Governance",
+    description: "Establish effective structures to enhance accountability and decision-making.",
+    image: "https://images.unsplash.com/photo-1516321497487-e288fb19713f"
+  }
+];
+
+// Statistics for the new stats section
+const stats = [
+  { value: "200+", label: "Clients Served" },
+  { value: "20+", label: "Years Experience" },
+  { value: "95%", label: "Client Retention" },
+  { value: "50+", label: "Expert Consultants" }
+];
+
+// Testimonials for the new section
+const testimonials = [
+  {
+    quote: "Essnad transformed our approach to digital security. Their expertise and tailored solutions have been invaluable to our organization's growth.",
+    name: "Ahmed Al-Farsi",
+    position: "CTO, Global Technologies"
+  },
+  {
+    quote: "Working with Essnad has been a game-changer for our business resilience strategy. Their team's insights helped us navigate complex challenges with confidence.",
+    name: "Sarah Johnson",
+    position: "Operations Director, Innovate Inc."
+  },
+  {
+    quote: "The governance framework Essnad implemented has significantly improved our decision-making processes and organizational transparency.",
+    name: "Khalid Al-Zadjali",
+    position: "CEO, Oman Enterprises"
   }
 ];
 

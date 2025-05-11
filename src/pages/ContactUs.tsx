@@ -56,7 +56,7 @@ const ContactUs = () => {
       <Hero
         title="Let's Connect"
         subtitle="We're Here to Help You Succeed"
-        imageSrc="/lovable-uploads/2d5cc9de-c4e6-418b-9528-40ebd2cd0003.png"
+        imageSrc="https://images.unsplash.com/photo-1516321497487-e288fb19713f"
         imagePosition="center"
       />
 
