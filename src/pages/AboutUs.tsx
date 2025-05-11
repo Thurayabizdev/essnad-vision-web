@@ -13,9 +13,9 @@ const AboutUs = () => {
   return (
     <>
       <Hero
-        title="About Us"
-        subtitle="Discover Our Journey and Vision"
-        imageSrc="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+        title="Our Story & Heritage"
+        subtitle="Building a Legacy of Excellence Through Innovation"
+        imageSrc="/lovable-uploads/2d5cc9de-c4e6-418b-9528-40ebd2cd0003.png"
         imagePosition="top"
         layout="left-aligned"
         cornerAccent={true}

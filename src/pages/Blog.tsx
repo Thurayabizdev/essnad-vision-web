@@ -113,9 +113,9 @@ const Blog = () => {
   return (
     <>
       <Hero
-        title="Blog & Insights"
-        subtitle="Stay informed with our latest articles, insights, and industry trends"
-        imageSrc="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
+        title="Insights & Perspectives"
+        subtitle="Expert Knowledge to Power Your Business Decisions"
+        imageSrc="/lovable-uploads/2d5cc9de-c4e6-418b-9528-40ebd2cd0003.png"
         overlayOpacity="opacity-70"
         layout="minimal"
         theme="light"

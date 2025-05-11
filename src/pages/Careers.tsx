@@ -8,9 +8,9 @@ const Careers = () => {
   return (
     <>
       <Hero
-        title="Join Our Team"
-        subtitle="Build Your Career at Essnad"
-        imageSrc="https://images.unsplash.com/photo-1521737711867-e3b97375f902"
+        title="Grow With Us"
+        subtitle="Shape the Future at Essnad"
+        imageSrc="/lovable-uploads/2d5cc9de-c4e6-418b-9528-40ebd2cd0003.png"
         imagePosition="center"
       />
 
