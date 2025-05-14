@@ -1,0 +1,21 @@
+{
+  "name": "my-vite-vercel-app",
+  "version": "1.0.0",
+  "description": "A Vite project deployed on Vercel with Vue.js",
+  "main": "src/main.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.0"
+  },
+  "devDependencies": {
+    "vite": "^2.0.0",
+    "@vitejs/plugin-vue": "^1.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
