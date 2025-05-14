@@ -15,9 +15,9 @@ const Navbar = () => {
     { name: 'Our Impact', path: '/our-impact' },
     { name: 'Careers', path: '/careers' },
     { name: 'Contact Us', path: '/contact-us' },
-    { name: 'Blog', path: '/blog' }, // Changed from 'Blog & Insights' to 'Blog'
+    { name: 'Blog', path: '/blog' },
     { name: 'Resources', path: '/resources' },
-    { name: 'New Menu', path: '/new-menu' }, // Added new menu item
+    { name: 'New Menu', path: '/new-menu' },
   ];
 
   useEffect(() => {
@@ -51,9 +51,9 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 to={link.path}
-                className={`text-sm font-medium transition-colors hover:text-essnad-orange ${
+                className={`text-sm font-medium transition-colors hover:text-black ${
                   location.pathname === link.path
-                    ? 'text-essnad-orange'
+                    ? 'text-black'
                     : 'text-essnad-gray'
                 }`}
               >
@@ -64,7 +64,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-essnad-gray hover:text-essnad-orange"
+            className="md:hidden text-essnad-gray hover:text-black"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle Menu"
           >
@@ -81,9 +81,9 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 to={link.path}
-                className={`block py-3 text-sm font-medium transition-colors hover:text-essnad-orange ${
+                className={`block py-3 text-sm font-medium transition-colors hover:text-black ${
                   location.pathname === link.path
-                    ? 'text-essnad-orange'
+                    ? 'text-black'
                     : 'text-essnad-gray'
                 }`}
               >

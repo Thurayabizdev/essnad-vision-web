@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import Hero from "@/components/Hero";
 import { Button } from "@/components/ui/button";
@@ -83,7 +82,7 @@ const ContactUs = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="border-gray-300 focus:border-essnad-orange focus:ring-essnad-orange"
+                      className="border-gray-300 focus:border-black focus:ring-black"
                     />
                   </div>
                   <div className="space-y-2">
@@ -97,7 +96,7 @@ const ContactUs = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="border-gray-300 focus:border-essnad-orange focus:ring-essnad-orange"
+                      className="border-gray-300 focus:border-black focus:ring-black"
                     />
                   </div>
                 </div>
@@ -112,7 +111,7 @@ const ContactUs = () => {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="border-gray-300 focus:border-essnad-orange focus:ring-essnad-orange"
+                      className="border-gray-300 focus:border-black focus:ring-black"
                     />
                   </div>
                   <div className="space-y-2">
@@ -124,7 +123,7 @@ const ContactUs = () => {
                       name="company"
                       value={formData.company}
                       onChange={handleChange}
-                      className="border-gray-300 focus:border-essnad-orange focus:ring-essnad-orange"
+                      className="border-gray-300 focus:border-black focus:ring-black"
                     />
                   </div>
                 </div>
@@ -139,7 +138,7 @@ const ContactUs = () => {
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    className="border-gray-300 focus:border-essnad-orange focus:ring-essnad-orange"
+                    className="border-gray-300 focus:border-black focus:ring-black"
                   />
                 </div>
 
@@ -154,13 +153,13 @@ const ContactUs = () => {
                     value={formData.message}
                     onChange={handleChange}
                     required
-                    className="border-gray-300 focus:border-essnad-orange focus:ring-essnad-orange"
+                    className="border-gray-300 focus:border-black focus:ring-black"
                   />
                 </div>
 
                 <Button 
                   type="submit" 
-                  className="bg-essnad-orange hover:bg-orange-600 text-white w-full md:w-auto px-8"
+                  className="bg-black hover:bg-black/80 text-white w-full md:w-auto px-8"
                   disabled={isLoading}
                 >
                   {isLoading ? (

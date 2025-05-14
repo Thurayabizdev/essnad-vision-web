@@ -27,8 +27,8 @@ const Careers = () => {
             {whyJoinData.map((item, index) => (
               <Card key={index} className="border-none shadow-sm hover:shadow-md transition-shadow">
                 <CardHeader className="pb-2">
-                  <div className="bg-essnad-orange/10 p-3 w-12 h-12 rounded-full flex items-center justify-center mb-4">
-                    <item.icon className="h-6 w-6 text-essnad-orange" />
+                  <div className="bg-black/10 p-3 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                    <item.icon className="h-6 w-6 text-black" />
                   </div>
                   <CardTitle className="text-xl text-essnad-gray">{item.title}</CardTitle>
                 </CardHeader>
@@ -51,7 +51,7 @@ const Careers = () => {
                 <ul className="space-y-3">
                   {culturePoints.map((point, index) => (
                     <li key={index} className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-essnad-orange shrink-0 mr-3 mt-0.5" />
+                      <CheckCircle className="h-5 w-5 text-black shrink-0 mr-3 mt-0.5" />
                       <span className="text-essnad-gray">{point}</span>
                     </li>
                   ))}
@@ -79,7 +79,7 @@ const Careers = () => {
                   <div className="flex flex-col md:flex-row md:items-center justify-between">
                     <div className="mb-4 md:mb-0">
                       <div className="flex items-center mb-2">
-                        <Briefcase className="h-5 w-5 text-essnad-orange mr-2" />
+                        <Briefcase className="h-5 w-5 text-black mr-2" />
                         <h4 className="text-xl font-bold text-essnad-gray">{job.title}</h4>
                       </div>
                       <div className="flex flex-wrap items-center text-sm text-essnad-gray">
@@ -88,7 +88,7 @@ const Careers = () => {
                         <span>{job.department}</span>
                       </div>
                     </div>
-                    <Button className="bg-essnad-orange hover:bg-orange-600">
+                    <Button className="bg-black hover:bg-black/80">
                       Apply Now <ChevronRight className="ml-2 h-4 w-4" />
                     </Button>
                   </div>
@@ -102,7 +102,7 @@ const Careers = () => {
                 We don't have any open positions at the moment, but we're always looking 
                 for talented individuals to join our team.
               </p>
-              <Button className="bg-essnad-orange hover:bg-orange-600 mt-6">
+              <Button className="bg-black hover:bg-black/80 mt-6">
                 Submit Your Resume
               </Button>
             </div>
@@ -115,7 +115,7 @@ const Careers = () => {
               We're always looking for talented individuals to join our team. Send us your 
               resume and we'll keep it on file for future opportunities.
             </p>
-            <Button className="bg-essnad-orange hover:bg-orange-600">
+            <Button className="bg-black hover:bg-black/80">
               Submit Open Application
             </Button>
           </div>
