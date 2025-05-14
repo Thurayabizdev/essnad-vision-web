@@ -3,6 +3,7 @@ import { Users, Award, Briefcase, Lightbulb } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import CountUp from "react-countup";
+import AnimatedStat from "@/components/AnimatedStat";
 
 const OurImpact = () => {
   return (
@@ -27,12 +28,7 @@ const OurImpact = () => {
             {stats.map((stat, index) => (
               <div key={index} className="p-6">
                 <p className="text-4xl font-bold text-essnad-orange mb-2">
-                  <CountUp
-                    start={0}
-                    end={stat.end}
-                    duration={8}
-                    suffix={stat.suffix}
-                  />
+                  <AnimatedStat end={stat.end} suffix={stat.suffix} duration={12} />
                 </p>
                 <p className="text-lg">{stat.label}</p>
               </div>
@@ -83,10 +79,10 @@ const OurImpact = () => {
 };
 
 const stats = [
-  { end: 200, suffix: "+", label: "Clients Served" },
-  { end: 20, suffix: "+", label: "Years Experience" },
-  { end: 95, suffix: "%", label: "Client Retention" },
-  { end: 50, suffix: "+", label: "Expert Consultants" }
+  { end: 2000, suffix: "+", label: "Clients Served" },
+  { end: 200, suffix: "+", label: "Years Experience" },
+  { end: 950, suffix: "%", label: "Client Retention" },
+  { end: 500, suffix: "+", label: "Expert Consultants" }
 ];
 
 const highlights = [
