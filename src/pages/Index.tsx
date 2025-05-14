@@ -300,10 +300,10 @@ const featuredServices = [
 
 // Statistics for the new stats section
 const stats = [
-  { end: 2000, suffix: "+", label: "Clients Served" },
-  { end: 200, suffix: "+", label: "Years Experience" },
-  { end: 950, suffix: "%", label: "Client Retention" },
-  { end: 500, suffix: "+", label: "Expert Consultants" }
+  { end: 250, suffix: "+", label: "Clients Served" },
+  { end: 25, suffix: "+", label: "Years Experience" },
+  { end: 97, suffix: "%", label: "Client Retention" },
+  { end: 40, suffix: "+", label: "Expert Consultants" }
 ];
 
 // Testimonials for the new section
