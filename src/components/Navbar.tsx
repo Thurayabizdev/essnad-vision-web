@@ -16,8 +16,7 @@ const Navbar = () => {
     { name: 'Careers', path: '/careers' },
     { name: 'Contact Us', path: '/contact-us' },
     { name: 'Blog', path: '/blog' },
-    { name: 'Resources', path: '/resources' },
-    { name: 'New Menu', path: '/new-menu' },
+    { name: 'Resources', path: '/resources' }
   ];
 
   useEffect(() => {
